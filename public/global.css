@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(102, 69, 69);
+  margin: 0;
+  padding: 0;
+}
+body.home {
+  background: red;
+}
+body.about {
+  background: pink;
+}
