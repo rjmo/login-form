@@ -30,15 +30,17 @@ export default {
 <style>
 .topnav {
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
+  background-color: #FBF9FF;
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Orelega One', cursive; */
-}
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  z-index: 1;}
 
 .topnav a {
   float: left;
   display: block;
-  color: whitesmoke;
+  color: #517664;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -51,11 +53,6 @@ export default {
   background-color: rgb(255, 255, 255);
   color: black;
   transition: 0.2s;
-}
-
-.topnav a.active {
-  background-color: #4caf50;
-  color: white;
 }
 
 .topnav .icon {
