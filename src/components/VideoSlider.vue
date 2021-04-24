@@ -72,6 +72,9 @@ img {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
+  min-width: 80vw;
+  min-height: 67vh;
+  background: gray;
 }
 
 .mySlides {

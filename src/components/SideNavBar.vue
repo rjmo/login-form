@@ -16,7 +16,7 @@
 
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       <div id="main">
-        <div class="top">
+        <div>
         <VideoSlider />
 
         </div>
@@ -97,12 +97,9 @@ export default {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
-  margin-left: 60px;
-}
-
-.top {
-  max-height: 50vh;
-  background-color:aqua;
+  display: flex;
+align-items: center;
+justify-content: center;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
