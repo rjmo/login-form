@@ -16,7 +16,10 @@
 
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       <div id="main">
+        <div class="top">
         <VideoSlider />
+
+        </div>
       </div>
     </div>
 
@@ -25,11 +28,11 @@
 </template>
 
 <script>
-import VideoSlider from "./VideoSlider.vue";
+import VideoSlider from '../components/VideoSlider.vue';
 export default {
   name: "SideNavBar",
   components: {
-    VideoSlider,
+    VideoSlider
   },
   methods: {
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
@@ -51,7 +54,6 @@ export default {
 .sidenav {
   height: 100%; /* 100% Full-height */
   position: fixed; /* Stay in place */
-  top: 0; /* Stay at the top */
   left: 0;
   background-color: #19241f; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -95,7 +97,12 @@ export default {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
-  margin-left: 50px;
+  margin-left: 60px;
+}
+
+.top {
+  max-height: 50vh;
+  background-color:aqua;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

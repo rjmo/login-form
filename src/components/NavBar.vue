@@ -33,9 +33,8 @@ export default {
   background-color: #FBF9FF;
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Orelega One', cursive; */
-  position: fixed; /* Set the navbar to fixed position */
-  width: 100%; /* Full width */
-  z-index: 1;}
+  z-index: 1;
+  }
 
 .topnav a {
   float: left;

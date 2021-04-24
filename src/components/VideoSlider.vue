@@ -19,8 +19,14 @@ C/O https://placeholder.com/ "
       </div>
 
       <!-- Next and previous buttons -->
-      <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-      <a class="next" @click="plusSlides(1)">&#10095;</a>
+ 
+      <div>
+
+        <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+        <a class="next" @click="plusSlides(1)">&#10095;</a>
+      </div>
+
+
     </div>
     <br />
   </div>
@@ -58,10 +64,9 @@ img {
 }
 
 .slideshow-container {
-  min-width: 75vw;
   min-height: 50vh;
-  background-color: whitesmoke;
   margin: auto;
+  position: relative;
   /* position: absolute;
   top: 55%;
   left: 50%;
@@ -78,7 +83,6 @@ img {
   cursor: pointer;
   position: absolute;
   top: 45%;
-  margin: auto;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -111,10 +115,6 @@ img {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-.active {
-  background-color: #717171;
 }
 
 /* Fading animation */
